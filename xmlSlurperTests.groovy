@@ -1,8 +1,8 @@
 import java.util.stream.Collectors
 
 lib = new jUnitReportXmlSlurper()
-reportPath = "/Users/kwaechter/results"
-tests = lib.getTestReportSummary("/Users/kwaechter/results/");
+reportPath = "./testXml"
+tests = lib.getTestReportSummary(reportPath);
 
 println "Running Unit Tests..."
 
