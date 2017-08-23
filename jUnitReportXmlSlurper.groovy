@@ -7,7 +7,7 @@ import java.util.stream.Collectors
 }
 
 
-public class JunitTestReportSummary{
+public class JunitTestReportSummary implements Serializable{
     public final int testFailureCount;
     public final int testPassCount;
     public final int testSkipCount;
