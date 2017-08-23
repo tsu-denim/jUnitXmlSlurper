@@ -1,11 +1,12 @@
 import groovy.io.FileType
 import java.util.stream.Collectors
 
-@NonCPS def getTestReportSummary(String resultPath){
+ @NonCPS
+ def getTestReportSummary(String resultPath){
     return new JunitTestReportSummary(resultPath)
 }
 
-@NonCPS
+
 public class JunitTestReportSummary{
     public final int testFailureCount;
     public final int testPassCount;
@@ -65,7 +66,7 @@ public class JunitTestReportSummary{
 
 }
 
-@NonCPS
+
 public class JunitXmlReader{
 
     private final List<TestCaseElement> testCaseElementList;
@@ -141,7 +142,7 @@ public class JunitXmlReader{
 
 }
 
-@NonCPS
+
 public class TestCaseElement{
     public final Map<String, String> testCaseAttributes;
 
@@ -150,7 +151,7 @@ public class TestCaseElement{
     }
 }
 
-@NonCPS
+
 public class TestExecution {
 
 
