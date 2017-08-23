@@ -1,5 +1,4 @@
 import groovy.io.FileType
-import junit.framework.TestCase
 import java.util.stream.Collectors
 
 def getTestReportSummary(String resultPath){
