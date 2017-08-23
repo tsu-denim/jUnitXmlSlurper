@@ -154,9 +154,9 @@ public class TestExecution {
     public String testGroup;
     public String pathToJunitReport;
     public String testDuration;
-    public Boolean isPassed;
-    public Boolean isFailed;
-    public Boolean isSkipped;
+    public boolean isPassed;
+    public boolean isFailed;
+    public boolean isSkipped;
 
     public TestExecution withTestName(String testName) {
         this.testName = testName;
@@ -178,17 +178,17 @@ public class TestExecution {
         return this;
     }
 
-    public TestExecution withIsPassed(Boolean isPassed) {
+    public TestExecution withIsPassed(boolean isPassed) {
         this.isPassed = isPassed;
         return this;
     }
 
-    public TestExecution withIsFailed(Boolean isFailed) {
+    public TestExecution withIsFailed(boolean isFailed) {
         this.isFailed = isFailed;
         return this;
     }
 
-    public TestExecution withIsSkipped(Boolean isSkipped) {
+    public TestExecution withIsSkipped(boolean isSkipped) {
         this.isSkipped = isSkipped;
         return this;
     }
