@@ -1,8 +1,12 @@
 import groovy.io.FileType
 import java.util.stream.Collectors
 
- @NonCPS
- def getTestReportSummary(String resultPath){
+ 
+
+
+
+
+ def static getTestReportSummary(String resultPath){
     return new JunitTestReportSummary(resultPath)
 }
 
