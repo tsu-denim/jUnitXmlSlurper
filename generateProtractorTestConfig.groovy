@@ -5,7 +5,7 @@ import org.apache.commons.cli.*
 
 
 
-reportPath = "./testXml"
+reportPath = args[0]
 tests = getTestReportSummary(reportPath);
 
 println "Total Test Count is: " + tests.testExecutionList.size()
