@@ -21,7 +21,7 @@ def static getTestReportSummary(String resultPath){
 }
 
 
-public class JunitTestReportSummary {
+class JunitTestReportSummary {
     public final int testFailureCount;
     public final int testPassCount;
     public final int testSkipCount;
@@ -58,7 +58,7 @@ public class JunitTestReportSummary {
         return isNotEmpty;
     }
 
-    private List<TestExecution> getTestExecutionList(){
+    def getTestExecutionList(){
         return new JunitXmlReader(this.testReportPath).getTestExecutions();
     }
 
