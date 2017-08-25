@@ -5,18 +5,13 @@ import org.apache.commons.cli.*
 
 
 
-//reportPath = args[0]
-//tests = getTestReportSummary(reportPath);
+reportPath = args[0]
+tests = getTestReportSummary(reportPath);
 
-//println "Total Test Count is: " + tests.testExecutionList.size()
-
-
+println "Total Test Count is: " + tests.testExecutionList.size()
 
 
-
-
-@NonCPS
-def static getTestReportSummary(String resultPath){
+def getTestReportSummary(String resultPath){
     return new JunitTestReportSummary(resultPath)
 }
 
@@ -213,5 +208,3 @@ public class TestExecution {
     }
 
 }
-
-return this
