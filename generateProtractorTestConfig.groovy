@@ -5,10 +5,10 @@ import org.apache.commons.cli.*
 
 
 
-reportPath = args[0]
-tests = getTestReportSummary(reportPath);
+//reportPath = args[0]
+//tests = getTestReportSummary(reportPath);
 
-println "Total Test Count is: " + tests.testExecutionList.size()
+//println "Total Test Count is: " + tests.testExecutionList.size()
 
 
 
@@ -213,3 +213,5 @@ public class TestExecution {
     }
 
 }
+
+return this
