@@ -15,7 +15,7 @@ import org.apache.commons.cli.*
 
 
 
-
+@NonCPS
 def getTestReportSummary(String resultPath){
     return new JunitTestReportSummary(resultPath)
 }
