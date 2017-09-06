@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.The assessment test instructor grade" timestamp="2017-09-06T13:06:30" hostname="localhost" time="57.037" errors="0" tests="6" skipped="1" disabled="0" failures="0">
+  <testcase classname="E2E.The assessment test instructor grade" name="allows instructor to view submission content and grade essay question (#avalon) PTID=471" time="11.747" />
+  <testcase classname="E2E.The assessment test instructor grade" name="allows instructor to view autograded submission content PTID=472" time="10.347" />
+  <testcase classname="E2E.The assessment test instructor grade" name="allows instructor to post test attempt grade (#quarantine) PTID=473" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="E2E.The assessment test instructor grade" name="allows instructor to add overall comments PTID=474" time="15.201" />
+  <testcase classname="E2E.The assessment test instructor grade" name="allows instructor to manually grade question with MC and essay PTID=280" time="10.256" />
+  <testcase classname="E2E.The assessment test instructor grade" name="allows instructor to add and delete answer options PTID=276" time="9.482" />
+ </testsuite>
+</testsuites>

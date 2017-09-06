@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.A link item" timestamp="2017-09-06T13:07:54" hostname="localhost" time="24.159" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.A link item" name="can be created successfully by instructor PTID=497" time="10.82" />
+  <testcase classname="E2E.A link item" name="can be opened by student PTID=535" time="5.754" />
+  <testcase classname="E2E.A link item" name="indicates its visibility after it is saved PTID=536" time="7.581" />
+ </testsuite>
+</testsuites>

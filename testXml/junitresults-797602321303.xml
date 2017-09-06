@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.The assessment test instructor view" timestamp="2017-09-06T13:06:32" hostname="localhost" time="75.189" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.The assessment test instructor view" name="can create a test (#avalon #shaky) PTID=447" time="9.952" />
+  <testcase classname="E2E.The assessment test instructor view" name="can progressively render PTID=498" time="8.679" />
+  <testcase classname="E2E.The assessment test instructor view" name="can open an existing test for edit from course outline PTID=448" time="7.19" />
+  <testcase classname="E2E.The assessment test instructor view" name="allows an instructor to delete a question PTID=1221" time="7.669" />
+  <testcase classname="E2E.The assessment test instructor view" name="can add all different types of questions to the test PTID=450" time="34.706" />
+  <testcase classname="E2E.The assessment test instructor view" name="can open the &apos;Add Question&apos; peek panel from the empty canvas PTID=451" time="6.989" />
+ </testsuite>
+ <testsuite name="E2E.Assessment submissions affecting editing" timestamp="2017-09-06T13:07:47" hostname="localhost" time="24.947" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.Assessment submissions affecting editing" name="can not add a question when submissions already exist on a test PTID=452" time="7.474" />
+  <testcase classname="E2E.Assessment submissions affecting editing" name="can edit existing essay question and point value when no submissions exist PTID=453" time="8.494" />
+  <testcase classname="E2E.Assessment submissions affecting editing" name="can not edit points nor delete an essay question when submissions exist PTID=454" time="8.977" />
+ </testsuite>
+ <testsuite name="E2E.Assessment settings" timestamp="2017-09-06T13:08:12" hostname="localhost" time="29.503" errors="0" tests="3" skipped="1" disabled="0" failures="0">
+  <testcase classname="E2E.Assessment settings" name="can edit test settings PTID=455" time="18.191" />
+  <testcase classname="E2E.Assessment settings" name="can set the show/hide-on date for a test from the course outline PTID=456" time="11.311" />
+  <testcase classname="E2E.Assessment settings" name="allows changing of the test visibility from the course outline (#quarantine) PTID=457" time="0">
+   <skipped />
+  </testcase>
+ </testsuite>
+</testsuites>

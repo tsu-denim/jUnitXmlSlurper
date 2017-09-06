@@ -2,18 +2,29 @@
 import groovy.io.FileType
 import java.util.stream.Collectors
 import org.apache.commons.cli.*
+import groovy.json.*
 
 
 
 reportPath = args[0]
-tests = getTestReportSummary(reportPath);
+sourcePath = args[1]
+def tests = getTestReportSummary(reportPath, sourcePath);
 
-println "Total Test Count is: " + tests.testExecutionList.size()
 
-
-def getTestReportSummary(String resultPath){
-    return new JunitTestReportSummary(resultPath)
+def testExecs = tests.testExecutionList
+def jsonBuilder = new groovy.json.JsonBuilder()
+def getTestReportSummary(String resultPath, String sourcePath){
+    return new JunitTestReportSummary(resultPath, sourcePath)
 }
+
+
+
+
+jsonBuilder(tests: testExecs)
+println (jsonBuilder.toPrettyString())
+
+
+
 
 
 class JunitTestReportSummary {
@@ -22,15 +33,17 @@ class JunitTestReportSummary {
     public final int testSkipCount;
     public final List<TestExecution> testExecutionList;
     private final String testReportPath;
+    private final String sourcePath;
 
     //Prevent compiler from creating default zero arg constructor
     private JunitTestReportSummary() {
         assert false: "Zero argument constructor should not be called, object creation for this class requires a file path.";
     }
 
-    public JunitTestReportSummary(String jUnitReportDirectoryPath) {
-        if (riskyStringNotEmpty(jUnitReportDirectoryPath)) {
+    public JunitTestReportSummary(String jUnitReportDirectoryPath, String sourcePath) {
+        if (riskyStringNotEmpty(jUnitReportDirectoryPath) && riskyStringNotEmpty(sourcePath)) {
             this.testReportPath = jUnitReportDirectoryPath;
+            this.sourcePath = sourcePath;
         } else {
             assert false: "Path to jUnit report directory was null or empty."
         }
@@ -54,7 +67,7 @@ class JunitTestReportSummary {
     }
 
     def getTestExecutionList(){
-        return new JunitXmlReader(this.testReportPath).getTestExecutions();
+        return new JunitXmlReader(this.testReportPath, this.sourcePath).getTestExecutions();
     }
 
     public List<TestExecution> getFailedTestList() {
@@ -80,9 +93,11 @@ public class JunitXmlReader{
 
     private final List<TestCaseElement> testCaseElementList;
     private final String directoryPath;
+    private final String sourcePath;
 
-    public JunitXmlReader(String testReportDirectoryPath){
+    public JunitXmlReader(String testReportDirectoryPath, String sourcePath){
         this.directoryPath = testReportDirectoryPath;
+        this.sourcePath = sourcePath;
         this.testCaseElementList = getTestCaseElementsFromFileSystem();
 
     }
@@ -128,6 +143,18 @@ public class JunitXmlReader{
         return testCases;
     }
 
+    String getSourceFromFileSystem(String directoryPath, String searchString) {
+        def listOfFiles = []
+        def fileContents = new File(directoryPath)
+        String returnString = "";
+
+        fileContents.eachFileRecurse(FileType.FILES) { file -> listOfFiles << file }
+
+         listOfFiles.stream().filter({ file -> file.path.contains("_test.js") && file.text.contains(searchString)}).each{ thefile ->
+            returnString = thefile.path;
+        };
+        return returnString;
+    }
 
     public List<TestExecution> getTestExecutions(){
         List<TestExecution> testExecutionList = new ArrayList<>();
@@ -135,6 +162,7 @@ public class JunitXmlReader{
             boolean passed = testcase.testCaseAttributes.get("outcome").equals("pass");
             boolean failed = testcase.testCaseAttributes.get("outcome").equals("fail");
             boolean skipped = testcase.testCaseAttributes.get("outcome").equals("skip");
+            String sourcePath = getSourceFromFileSystem(this.sourcePath, testcase.testCaseAttributes.get("caseName"));
 
             TestExecution testExecution = new TestExecution()
                     .withIsFailed(failed)
@@ -143,7 +171,8 @@ public class JunitXmlReader{
                     .withTestDuration(testcase.testCaseAttributes.get("executionTime"))
                     .withTestName(testcase.testCaseAttributes.get("caseName"))
                     .withTestGroup(testcase.testCaseAttributes.get("suiteName"))
-                    .withPathToJunitReport(testcase.testCaseAttributes.get("filePath"));
+                    .withPathToJunitReport(testcase.testCaseAttributes.get("filePath"))
+                    .withPathToSource(sourcePath);
             testExecutionList.add(testExecution);
         }
         return testExecutionList;
@@ -161,16 +190,17 @@ public class TestCaseElement{
 }
 
 
-public class TestExecution {
+class TestExecution {
 
 
-    public String testName;
-    public String testGroup;
-    public String pathToJunitReport;
-    public String testDuration;
-    public boolean isPassed;
-    public boolean isFailed;
-    public boolean isSkipped;
+    String testName;
+    String testGroup;
+    String pathToJunitReport;
+    String pathToSource;
+    String testDuration;
+    boolean isPassed;
+    boolean isFailed;
+    boolean isSkipped;
 
     public TestExecution withTestName(String testName) {
         this.testName = testName;
@@ -184,6 +214,11 @@ public class TestExecution {
 
     public TestExecution withPathToJunitReport(String pathToJunitReport) {
         this.pathToJunitReport = pathToJunitReport;
+        return this;
+    }
+
+    public TestExecution withPathToSource(String pathToSource) {
+        this.pathToSource = pathToSource;
         return this;
     }
 

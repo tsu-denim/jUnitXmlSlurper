@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.The group conversation on assignment" timestamp="2017-09-06T13:08:20" hostname="localhost" time="53.795" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.The group conversation on assignment" name="instructor can add comments for any group PTID=27" time="13.247" />
+  <testcase classname="E2E.The group conversation on assignment" name="student can add comments in own group PTID=28" time="19.447" />
+  <testcase classname="E2E.The group conversation on assignment" name="student can view own group comments PTID=29" time="8.692" />
+  <testcase classname="E2E.The group conversation on assignment" name="all students can see comments in common group named Class Conversation PTID=30" time="12.406" />
+ </testsuite>
+</testsuites>

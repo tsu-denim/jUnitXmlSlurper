@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.The course calendar page for an instructor member of a course" timestamp="2017-09-06T13:06:01" hostname="localhost" time="109.567" errors="0" tests="9" skipped="2" disabled="0" failures="0">
+  <testcase classname="E2E.The course calendar page for an instructor member of a course" name="should create a new course schedule PTID=392" time="22.201" />
+  <testcase classname="E2E.The course calendar page for an instructor member of a course" name="should edit an existing course schedule PTID=405" time="20.687" />
+  <testcase classname="E2E.The course calendar page for an instructor member of a course" name="should delete an existing course schedule PTID=406" time="14.369" />
+  <testcase classname="E2E.The course calendar page for an instructor member of a course" name="should create a new office hours (#quarantine) PTID=410" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="E2E.The course calendar page for an instructor member of a course" name="should edit an existing office hours PTID=411" time="14.834" />
+  <testcase classname="E2E.The course calendar page for an instructor member of a course" name="should delete an existing office hours PTID=412" time="12.709" />
+  <testcase classname="E2E.The course calendar page for an instructor member of a course" name="should create a new event PTID=379" time="8.897" />
+  <testcase classname="E2E.The course calendar page for an instructor member of a course" name="should edit an existing event (#quarantine) PTID=387" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="E2E.The course calendar page for an instructor member of a course" name="should delete an existing event PTID=388" time="15.864" />
+ </testsuite>
+</testsuites>

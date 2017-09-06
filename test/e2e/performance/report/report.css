@@ -1,0 +1,24 @@
+.main {
+  margin-top: 1rem;
+}
+
+.table thead tr th {
+  white-space: nowrap;
+}
+
+.activity-header, .url-header {
+  width: 100%;
+}
+
+.table tr td.numeric {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tfoot tr td {
+  font-weight: bold;
+}
+
+.test-card .table-wrapper {
+  max-height: 25rem;
+}

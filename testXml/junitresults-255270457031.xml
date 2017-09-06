@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.The course outline student view" timestamp="2017-09-06T13:09:46" hostname="localhost" time="9.162" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.The course outline student view" name="displays visible, hidden, and restricted content correctly PTID=243" time="9.16" />
+ </testsuite>
+</testsuites>

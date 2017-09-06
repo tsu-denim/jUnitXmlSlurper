@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.The assessment test student view" timestamp="2017-09-06T13:06:51" hostname="localhost" time="35.781" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.The assessment test student view" name="can start to an attempt for a test PTID=458" time="8.82" />
+  <testcase classname="E2E.The assessment test student view" name="can continue an attempt for a test PTID=459" time="8.472" />
+  <testcase classname="E2E.The assessment test student view" name="auto-save occurs when answer to a question is entered PTID=460" time="12.45" />
+  <testcase classname="E2E.The assessment test student view" name="can be seen from course outline PTID=461" time="6.036" />
+ </testsuite>
+ <testsuite name="E2E.student assessment submission" timestamp="2017-09-06T13:07:27" hostname="localhost" time="60.163" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.student assessment submission" name="allows a student to add a text block to a test with non-answerable questions PTID=462" time="10.728" />
+  <testcase classname="E2E.student assessment submission" name="allows a student to add a file to a test with non-answerable questions PTID=463" time="9.953" />
+  <testcase classname="E2E.student assessment submission" name="should allow a student to answer all types of questions PTID=464" time="20.802" />
+  <testcase classname="E2E.student assessment submission" name="can submit an attempt to an assessment with multiple choice questions and immediately see the grade PTID=465" time="18.679" />
+ </testsuite>
+ <testsuite name="E2E.student reviews test attempt" timestamp="2017-09-06T13:08:27" hostname="localhost" time="23.442" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.student reviews test attempt" name="renders grading bar correctly when submission has not been graded PTID=466" time="7.569" />
+  <testcase classname="E2E.student reviews test attempt" name="renders grade in grading bar PTID=467" time="6.487" />
+  <testcase classname="E2E.student reviews test attempt" name="displays notification if calculated grade has been overridden PTID=468" time="9.386" />
+ </testsuite>
+</testsuites>

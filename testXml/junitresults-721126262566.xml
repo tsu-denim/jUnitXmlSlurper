@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.Goals" timestamp="2017-09-06T12:59:51" hostname="localhost" time="1.229" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.Goals" name="can be created for E2E test consumption PTID=122" time="1.225" />
+ </testsuite>
+ <testsuite name="E2E.The ultra experience" timestamp="2017-09-06T12:59:53" hostname="localhost" time="11.378" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.The ultra experience" name="can be enabled PTID=137" time="11.378" />
+ </testsuite>
+</testsuites>

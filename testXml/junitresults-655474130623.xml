@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.The course messages page" timestamp="2017-09-06T13:09:34" hostname="localhost" time="69.098" errors="0" tests="7" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.The course messages page" name="allows user to send/delete messages PTID=425" time="9.929" />
+  <testcase classname="E2E.The course messages page" name="open messages panel from course card popup by clicking on messages icon PTID=1080" time="5.398" />
+  <testcase classname="E2E.The course messages page" name="does not allow user to reply to messages if &quot;Allow replies to this message&quot; turned off PTID=426" time="9.135" />
+  <testcase classname="E2E.The course messages page" name="allows user to reply message even deleted by instructor PTID=427" time="11.701" />
+  <testcase classname="E2E.The course messages page" name="allows user to send/delete messages *flatfile* PTID=640" time="8.77" />
+  <testcase classname="E2E.The course messages page" name="does not allow user to reply to messages if &quot;Allow replies to this message&quot; turned off *flatfile* PTID=641" time="9.709" />
+  <testcase classname="E2E.The course messages page" name="allows user to reply message even deleted by instructor *flatfile* PTID=642" time="11.43" />
+ </testsuite>
+</testsuites>

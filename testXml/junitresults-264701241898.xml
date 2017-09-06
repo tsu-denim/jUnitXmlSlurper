@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.Ultra groups" timestamp="2017-09-06T13:09:31" hostname="localhost" time="98.512" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.Ultra groups" name="can be assigned to and deleted from an assessment (#avalon) PTID=396" time="13.218" />
+  <testcase classname="E2E.Ultra groups" name="can be assigned to an assessment randomly PTID=118" time="14.729" />
+  <testcase classname="E2E.Ultra groups" name="can be edited by an instructor PTID=399" time="13.817" />
+  <testcase classname="E2E.Ultra groups" name="can move students between groups PTID=400" time="18.497" />
+  <testcase classname="E2E.Ultra groups" name="can be reused from other contents PTID=402" time="17.336" />
+  <testcase classname="E2E.Ultra groups" name="won&apos;t be affected if reused by other contents PTID=403" time="20.911" />
+ </testsuite>
+</testsuites>

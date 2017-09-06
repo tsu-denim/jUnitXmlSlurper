@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.The course grades grid page (as instructor)" timestamp="2017-09-06T13:08:52" hostname="localhost" time="47.108" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.The course grades grid page (as instructor)" name="can toggle between list and grid view PTID=534" time="7.479" />
+  <testcase classname="E2E.The course grades grid page (as instructor)" name="can enter and post override grade (#avalon) PTID=543" time="8.993" />
+  <testcase classname="E2E.The course grades grid page (as instructor)" name="can post grades for grade column PTID=544" time="7.146" />
+  <testcase classname="E2E.The course grades grid page (as instructor)" name="can show and delete a grade column PTID=545" time="7.265" />
+  <testcase classname="E2E.The course grades grid page (as instructor)" name="can open submission panel from course grades panel PTID=546" time="8.459" />
+  <testcase classname="E2E.The course grades grid page (as instructor)" name="can grade for offlineitem on Gridview PTID=213" time="7.761" />
+ </testsuite>
+</testsuites>

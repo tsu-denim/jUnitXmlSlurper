@@ -1,0 +1,17 @@
+[
+  {"server": "ultra-integ.int.bbpd.io", "env_type": "dev", "include": "", "exclude": ""},
+  {"server": "ultra-dev.int.bbpd.io", "env_type": "dev", "include": "", "exclude": ""},
+  {"server": "qa-ultra-std-dev.int.bbpd.io", "env_type": "dev", "include": "", "exclude": ""},
+  {"server": "qa-ultra-adv-dev.int.bbpd.io", "env_type": "dev", "include": "", "exclude": ""},
+  {"server": "qa-trylearn-std-qatest.int.bbpd.io", "env_type": "dev", "include": "", "exclude": ""},
+  {"server": "qa-ultra-std-rc.int.bbpd.io", "env_type": "rc", "include": "", "exclude": ""},
+  {"server": "qa-ultra-adv-rc.int.bbpd.io", "env_type": "rc", "include": "", "exclude": ""},
+  {"server": "qa-trylearn-std-rc.int.bbpd.io", "env_type": "rc", "include": "", "exclude": ""},
+  {"server": "qa-ultra-std-intp.int.bbpd.io", "env_type": "intp", "include": "", "exclude": ""},
+  {"server": "qa-trylearn-std-intp.int.bbpd.io", "env_type": "intp", "include": "", "exclude": ""},
+  {"server": "qa-ultra-std-clienttest.int.bbpd.io", "env_type": "client-test", "include": "", "exclude": ""},
+  {"server": "qa-trylearn-std-clienttest.int.bbpd.io", "env_type": "client-test", "include": "", "exclude": ""},
+  {"server": "qa-ultra-std-ga.int.bbpd.io", "env_type": "ga", "include": "", "exclude": ""},
+  {"server": "qa-trylearn-std-ga.int.bbpd.io", "env_type": "ga", "include": "", "exclude": ""},
+  {"server": "mylearn.int.bbpd.io", "env_type": "test", "include": "", "exclude": ""}
+]

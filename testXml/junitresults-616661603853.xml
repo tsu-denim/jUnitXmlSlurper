@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.For the graded discussion" timestamp="2017-09-06T13:08:13" hostname="localhost" time="107.596" errors="0" tests="5" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.For the graded discussion" name="instructor can post grade on student discussion grade page, then student view grade (#avalon) PTID=6" time="16.722" />
+  <testcase classname="E2E.For the graded discussion" name="instructor can adds feedback while grading student PTID=8" time="27.829" />
+  <testcase classname="E2E.For the graded discussion" name="instructor can toggle the visibility of the score recommendation off (#new) PTID=963" time="20.276" />
+  <testcase classname="E2E.For the graded discussion" name="student can view the feedback PTID=32" time="17.672" />
+  <testcase classname="E2E.For the graded discussion" name="instructor can remove grade from grade discussion, then student view his/her grade is removed PTID=13" time="25.092" />
+ </testsuite>
+</testsuites>

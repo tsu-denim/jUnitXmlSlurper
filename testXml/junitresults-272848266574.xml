@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.Timed Assessment" timestamp="2017-09-06T13:07:06" hostname="localhost" time="21.253" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.Timed Assessment" name="Instructor can create timed test PTID=557" time="10.85" />
+  <testcase classname="E2E.Timed Assessment" name="Student can work on the timed assessment PTID=558" time="10.4" />
+ </testsuite>
+</testsuites>

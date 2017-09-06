@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.The login page for user" timestamp="2017-09-06T13:05:48" hostname="localhost" time="33.761" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.The login page for user" name="should log in and log out PTID=308" time="4.876" />
+  <testcase classname="E2E.The login page for user" name="should create an account PTID=309" time="25.668" />
+  <testcase classname="E2E.The login page for user" name="should not log in successfully with wrong account information PTID=307" time="1.121" />
+  <testcase classname="E2E.The login page for user" name="should get back password PTID=310" time="2.093" />
+ </testsuite>
+</testsuites>

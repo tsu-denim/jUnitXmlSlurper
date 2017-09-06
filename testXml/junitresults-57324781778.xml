@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.Accommodation feature" timestamp="2017-09-06T13:06:00" hostname="localhost" time="29.891" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="E2E.Accommodation feature" name="allows Instructor to set accommodation flag and see &quot;late&quot; indicators correctly PTID=423" time="20.957" />
+  <testcase classname="E2E.Accommodation feature" name="allows Student with due date exception to see &quot;late&quot; indicators correctly PTID=424" time="8.932" />
+ </testsuite>
+</testsuites>

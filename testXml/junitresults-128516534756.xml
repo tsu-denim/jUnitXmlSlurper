@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="E2E.the course discussion" timestamp="2017-09-06T13:08:01" hostname="localhost" time="113.346" errors="0" tests="14" skipped="1" disabled="0" failures="0">
+  <testcase classname="E2E.the course discussion" name="instructor can create discussion (#avalon #shaky) PTID=2" time="10.163" />
+  <testcase classname="E2E.the course discussion" name="instructor can delete discussion PTID=5" time="6.477" />
+  <testcase classname="E2E.the course discussion" name="instructor can add comments in discussion PTID=7" time="9.016" />
+  <testcase classname="E2E.the course discussion" name="instructor can view student comments prior to making their own when post first is enabled PTID=822" time="6.596" />
+  <testcase classname="E2E.the course discussion" name="instructor can add replies in discussion PTID=112" time="12.623" />
+  <testcase classname="E2E.the course discussion" name="instructor can edit comments/replies in discussion PTID=9" time="8.573" />
+  <testcase classname="E2E.the course discussion" name="instructor can delete comments/replies in discussion PTID=10" time="6.762" />
+  <testcase classname="E2E.the course discussion" name="student can create discussion (#quarantine) PTID=11" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="E2E.the course discussion" name="student can view instructor&apos;s comments/replies in discussion PTID=12" time="5.984" />
+  <testcase classname="E2E.the course discussion" name="student can add comments in discussion PTID=14" time="8.225" />
+  <testcase classname="E2E.the course discussion" name="student should see/not see comments correctly with post first enabled PTID=823" time="9.07" />
+  <testcase classname="E2E.the course discussion" name="student can add replies in discussion PTID=113" time="12.176" />
+  <testcase classname="E2E.the course discussion" name="student can edit his/her own comments/replies in discussion PTID=15" time="9.701" />
+  <testcase classname="E2E.the course discussion" name="student can delete his/her own comments/replies in discussion PTID=16" time="7.973" />
+ </testsuite>
+</testsuites>
