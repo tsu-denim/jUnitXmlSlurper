@@ -24,9 +24,6 @@ jsonBuilder(tests: testExecs)
 println (jsonBuilder.toPrettyString())
 
 
-
-
-
 class JunitTestReportSummary {
     public final int testFailureCount;
     public final int testPassCount;
@@ -150,7 +147,7 @@ public class JunitXmlReader{
 
         fileContents.eachFileRecurse(FileType.FILES) { file -> listOfFiles << file }
 
-         listOfFiles.stream().filter({ file -> file.path.contains("_test.js") && file.text.contains(searchString)}).each{ thefile ->
+         listOfFiles.stream().filter({ file -> file.path.contains("_test.ts") && file.text.contains(searchString)}).each{ thefile ->
             returnString = thefile.path;
         };
         return returnString;
