@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
- <testsuite name="E2E.The tinyMCE link plugin" timestamp="2017-09-06T13:10:10" hostname="localhost" time="21.065" errors="0" tests="1" skipped="0" disabled="0" failures="0">
-  <testcase classname="E2E.The tinyMCE link plugin" name="can create/edit a hyperlink with in a test and open in a new window for a student PTID=526" time="21.062" />
- </testsuite>
-</testsuites>

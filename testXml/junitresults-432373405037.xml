@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
- <testsuite name="E2E.The base grades page (as student)" timestamp="2017-09-06T13:05:48" hostname="localhost" time="22.665" errors="0" tests="2" skipped="0" disabled="0" failures="0">
-  <testcase classname="E2E.The base grades page (as student)" name="should display visible grade column with correct grade and color PTID=524" time="9.36" />
-  <testcase classname="E2E.The base grades page (as student)" name="should click grade columns to open peek panel view and click View all coursework to open course grade PTID=525" time="13.302" />
- </testsuite>
-</testsuites>

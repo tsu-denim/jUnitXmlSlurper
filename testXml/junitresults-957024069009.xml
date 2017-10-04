@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
- <testsuite name="E2E.Drag and drop" timestamp="2017-09-06T13:07:29" hostname="localhost" time="20.549" errors="0" tests="3" skipped="0" disabled="0" failures="0">
-  <testcase classname="E2E.Drag and drop" name="can reposition content with keyboard PTID=301" time="7.287" />
-  <testcase classname="E2E.Drag and drop" name="can move content into a folder with other content PTID=302" time="6.978" />
-  <testcase classname="E2E.Drag and drop" name="prevents dropping into a nested folder while a folder is being dragged PTID=303" time="6.279" />
- </testsuite>
-</testsuites>

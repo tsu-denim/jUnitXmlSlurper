@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
- <testsuite name="E2E.A multiple attempts assessment (instructor)" timestamp="2017-09-06T13:06:19" hostname="localhost" time="47.955" errors="0" tests="4" skipped="0" disabled="0" failures="0">
-  <testcase classname="E2E.A multiple attempts assessment (instructor)" name="can open multiple attempt peek panel from submission list page PTID=442" time="9.935" />
-  <testcase classname="E2E.A multiple attempts assessment (instructor)" name="can enter the final grade from the multiple attempt peek panel PTID=443" time="9.88" />
-  <testcase classname="E2E.A multiple attempts assessment (instructor)" name="can enter the attempt grade when viewing details PTID=444" time="10.881" />
-  <testcase classname="E2E.A multiple attempts assessment (instructor)" name="can delete a specific attempt when viewing details PTID=445" time="17.256" />
- </testsuite>
-</testsuites>

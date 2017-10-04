@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
- <testsuite name="E2E.The login page for administrator" timestamp="2017-09-06T13:05:48" hostname="localhost" time="5.029" errors="0" tests="1" skipped="0" disabled="0" failures="0">
-  <testcase classname="E2E.The login page for administrator" name="should log in correctly PTID=306" time="5.026" />
- </testsuite>
-</testsuites>

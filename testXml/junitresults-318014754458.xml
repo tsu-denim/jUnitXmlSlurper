@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
- <testsuite name="E2E.An assessment with randomization enabled" timestamp="2017-09-06T13:06:28" hostname="localhost" time="44.957" errors="0" tests="2" skipped="0" disabled="0" failures="0">
-  <testcase classname="E2E.An assessment with randomization enabled" name="displays questions in randomized order for student taking attempt PTID=435 " time="33.679" />
-  <testcase classname="E2E.An assessment with randomization enabled" name="disables randomization if text block is added and confirmed PTID=436 " time="11.275" />
- </testsuite>
-</testsuites>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
- <testsuite name="E2E.Course Import" timestamp="2017-09-06T13:07:52" hostname="localhost" time="142.12" errors="0" tests="2" skipped="0" disabled="0" failures="0">
-  <testcase classname="E2E.Course Import" name="should let an instructor import a classic course export into an Ultra course PTID=282" time="71.559" />
-  <testcase classname="E2E.Course Import" name="should let an instructor import an Ultra course export into an Ultra course PTID=283" time="70.555" />
- </testsuite>
-</testsuites>
